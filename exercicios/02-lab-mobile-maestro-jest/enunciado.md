@@ -77,3 +77,5 @@ maestro test flows/01-launch.yaml
 - Jest primeiro (feedback em segundos), Maestro depois (precisa de emulador).
 - `01-favoritesStore.test.ts` e o teste 1 da integração são seus modelos — leia antes.
 - Travou num seletor Maestro? `maestro studio` inspeciona os testIDs ao vivo.
+
+➡️ **Instalação, setup do emulador e entrega passo a passo:** [`pratica/COMECE-AQUI.md`](pratica/COMECE-AQUI.md).
