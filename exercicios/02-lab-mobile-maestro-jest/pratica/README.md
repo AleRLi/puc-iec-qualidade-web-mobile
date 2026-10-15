@@ -24,7 +24,7 @@ ls flows            # Windows (PowerShell): dir flows
 # 3. Rode (precisa de emulator/device + app CineFav instalado):
 maestro test flows/01-launch.yaml   # modelo resolvido — deve passar
 maestro test flows/                  # todos
-maestro studio                       # editor visual (localhost:9999)
+maestro hierarchy                    # lista os testIDs da tela (o app Maestro Studio faz o mesmo, visual)
 ```
 
 > 📁 **Erro mais comum:** rodar `maestro` da raiz do repo. O comando precisa enxergar a pasta `flows/` — por isso entre em `exercicios/02-lab-mobile-maestro-jest/pratica` antes.

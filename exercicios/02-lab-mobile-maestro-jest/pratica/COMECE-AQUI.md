@@ -53,6 +53,8 @@ maestro test flows/01-launch.yaml          # modelo resolvido
 
 Depois complete `flows/02-search.yaml` → `05-js-dynamic.yaml` (TODOs marcados).
 
+**Maestro Studio (recomendado) — app desktop:** ele mostra o `id` de cada elemento clicando na tela do emulador. Desde 2026 não vem mais com o `maestro`: baixe em **studio.maestro.dev** (macOS `.dmg` ~700 MB · Windows `.exe` ~560 MB · Linux `.AppImage` ~630 MB). É um download grande, então baixe com antecedência. **Sem o Studio você não fica travado:** `maestro hierarchy` imprime os `id`s no terminal e todos estão em `src/utils/testIDs.ts`.
+
 ## 5. Assista o screencast
 
 O screencast da unidade mostra o professor fazendo o primeiro exercício de cada
@@ -61,5 +63,5 @@ frente. Pause, rode, compare.
 ## Travou?
 
 - Jest: extensão **Orta.vscode-jest** mostra ✓/✗ inline (recomendada em `.vscode/`)
-- Maestro: `maestro studio` inspeciona os testIDs ao vivo
+- Maestro: o app **Maestro Studio** (baixe em studio.maestro.dev) ou `maestro hierarchy` mostram os testIDs
 - Office hours semanal — link no Canvas
