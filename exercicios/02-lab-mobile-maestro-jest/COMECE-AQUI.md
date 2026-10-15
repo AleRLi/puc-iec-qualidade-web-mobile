@@ -42,7 +42,7 @@ npm run android      # compila e instala o CineFav no emulador Android
 # iOS (só Mac): npm run ios
 ```
 
-Login: `aluno@puc.br` / `1234`. **É esse app que você testa.**
+**Abra o CineFav no emulador** (ícone 🎬) e entre com `aluno@puc.br` / `1234`: tem que aparecer a lista de filmes. **Só siga para o Maestro depois disso.** É esse app que você testa.
 
 ## 4. Maestro
 

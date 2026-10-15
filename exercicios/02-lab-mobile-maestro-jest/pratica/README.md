@@ -10,8 +10,8 @@ Um app só, três níveis: **unit** (Jest), **integração** (RNTL) e **E2E** (M
 
 ## Comece aqui
 
-👉 **Setup:** [`../COMECE-AQUI.md`](../COMECE-AQUI.md) — instalar app e Maestro (por SO).
-📄 **Enunciado + rubrica:** [`../enunciado.md`](../enunciado.md)
+👉 **Setup:** [`COMECE-AQUI.md`](https://github.com/jacksonsmith/puc-iec-qualidade-web-mobile/blob/main/exercicios/02-lab-mobile-maestro-jest/COMECE-AQUI.md) — instalar app e Maestro (por SO).
+📄 **Enunciado + rubrica:** [`enunciado.md`](https://github.com/jacksonsmith/puc-iec-qualidade-web-mobile/blob/main/exercicios/02-lab-mobile-maestro-jest/enunciado.md)
 
 ```bash
 # 1. ENTRE nesta pasta (rode o Maestro SEMPRE daqui — não da raiz do repo):
