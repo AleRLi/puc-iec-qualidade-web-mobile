@@ -26,7 +26,8 @@ e complete os TODOs. Modelo resolvido: `01-favoritesStore.test.ts`.
 ## 3. Rode o app e explore
 
 ```bash
-npm start             # Expo — abra no emulador Android (a) ou iOS (i)
+npm run android      # compila e instala o CineFav no emulador Android (o Maestro precisa do app instalado)
+# iOS (só Mac): npm run ios
 ```
 
 Login: `aluno@puc.br` / `1234`. **É esse app que você testa.**
@@ -34,7 +35,7 @@ Login: `aluno@puc.br` / `1234`. **É esse app que você testa.**
 ## 4. Maestro
 
 ```bash
-curl -Ls get.maestro.mobile.dev | bash    # guia por SO: docs/INSTALACAO_MAESTRO.md
+curl -Ls get.maestro.mobile.dev | bash    # Windows e outros: https://docs.maestro.dev/getting-started/installing-maestro
 maestro test flows/01-launch.yaml          # modelo resolvido
 ```
 
