@@ -25,8 +25,20 @@ e complete os TODOs. Modelo resolvido: `01-favoritesStore.test.ts`.
 
 ## 3. Rode o app e explore
 
+**Caminho rápido (recomendado) — APK pronto, com o emulador ligado:**
+
 ```bash
-npm run android      # compila e instala o CineFav no emulador Android (o Maestro precisa do app instalado)
+# baixe CineFav.apk em: https://github.com/jacksonsmith/puc-iec-testes-aplicacoes-mobile/releases
+adb install CineFav.apk
+adb devices          # confirme antes: tem que listar o emulador
+```
+
+> O Maestro **não lê o arquivo `.apk`**: ele controla o app **já instalado** no emulador. É o mesmo app deste lab (`com.puciec.cinefav`), com dados mockados.
+
+**Alternativa — compilar do código** (mais demorado: a 1ª vez baixa o Gradle, 5 a 15 min):
+
+```bash
+npm run android      # compila e instala o CineFav no emulador Android
 # iOS (só Mac): npm run ios
 ```
 
