@@ -36,9 +36,8 @@ ls flows __tests__
 npm install
 npm test                # Jest roda — scaffolds passam "vazios", complete os TODOs
 
-# Maestro (guia por SO: https://docs.maestro.dev/getting-started/installing-maestro)
-curl -Ls get.maestro.mobile.dev | bash
-maestro test flows/01-launch.yaml
+# Maestro: instalação por SO (macOS/Linux/Windows) no COMECE-AQUI, passo 4
+maestro test flows/01-launch.yaml     # com o emulador ligado
 ```
 
 > **Abra a pasta `pratica/` direto no editor** (`code .`) — senão o TS server e a
