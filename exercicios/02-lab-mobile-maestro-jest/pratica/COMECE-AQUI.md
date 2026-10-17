@@ -68,7 +68,7 @@ maestro test flows/01-launch.yaml          # modelo resolvido (Windows: flows\01
 > `maestro` não achou o device? O emulador precisa estar **ligado e com o Android carregado**; `adb devices` tem que listá-lo.
 > Apareceu um aviso cinza de compatibilidade no emulador? Toque em **OK** e rode o flow de novo.
 
-Depois complete `flows/02-search.yaml` → `05-js-dynamic.yaml` (TODOs marcados).
+Depois complete `flows/02-search.yaml` e `flows/03-favorite.yaml` (TODOs marcados): **são os dois flows da entrega**. `04-detail.yaml` e `05-js-dynamic.yaml` são **opcionais** (prática extra, não valem nota).
 
 > **YAML indenta com espaços, nunca com Tab** (o `.editorconfig` já converte para 2 espaços). `tapOn:` seguido de `id:` → o `id:` fica 2 espaços à direita.
 > **Repetiu o login em vários flows?** Extraia para um arquivo e chame com `- runFlow: file: _fragments/login.yaml` (veja o slide *Fragmento* da aula).
