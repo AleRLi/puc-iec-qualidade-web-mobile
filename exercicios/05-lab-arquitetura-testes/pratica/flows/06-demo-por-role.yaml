@@ -1,0 +1,25 @@
+# 🔵 DEMO (não conta nota): "getByRole" no Maestro.
+# No Maestro, id/text são REGEX — dá pra selecionar "todos os botões" de um tipo sem listar um por um.
+# Pra DESCOBRIR os ids: `node scripts/get-by-role.js button` (app aberto na tela).
+appId: com.puciec.cinefav
+---
+- launchApp
+- runFlow: _fragments/login.yaml
+
+# ~ getAllByRole('button', { name: /heart/ }) — o 1º coração da lista
+- tapOn:
+    id: "movie-card-heart-.*"
+    index: 0
+
+# ~ .nth(2) — o 3º coração
+- tapOn:
+    id: "movie-card-heart-.*"
+    index: 2
+
+# ~ getByRole('button', { name: 'Favoritos' }) — por texto visível, regex case-insensitive
+- tapOn: "(?i)favoritos"
+
+# ~ expect(getAllByRole('listitem')).toHaveCount(2) — conta via regex + assert do contador da tela
+- assertVisible: "2 favoritos"
+- assertVisible:
+    id: "favorites-item-.*"
