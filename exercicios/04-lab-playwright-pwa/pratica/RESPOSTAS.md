@@ -4,8 +4,8 @@ cd lab-pwa# RESPOSTAS — Lab Playwright PWA
 > Não precisa de texto bonito — precisa mostrar que você **entendeu o porquê**, não só o como.
 > Vale 1 ponto (correção manual, no Canvas).
 
-**Nome:** Copilot
-**Login do GitHub:** copilot
+**Nome:** Alessandro Ruijun Li
+**Login do GitHub:** AleRLi
 **Usei IA?** ( ) não · (x) sim — qual ferramenta e pra quê: Utilizei o Agente de IA integrado do visual code (Copilot), principalmente para facilitar na criação dos testes
 
 ---
