@@ -1,25 +1,29 @@
 # 🔵 DEMO (não conta nota): "getByRole" no Maestro.
-# No Maestro, id/text são REGEX — dá pra selecionar "todos os botões" de um tipo sem listar um por um.
-# Pra DESCOBRIR os ids: `node scripts/get-by-role.js button` (app aberto na tela).
+# id/text são REGEX → dá pra pegar "todos os botões de um tipo" sem listar um por um.
+# `index` faz o papel do .nth() do Playwright. Seletores vêm de elements/roles.js.
 appId: com.puciec.cinefav
+tags:
+  - demo
 ---
 - launchApp
 - runFlow: _fragments/login.yaml
+- runScript: elements/roles.js
 
-# ~ getAllByRole('button', { name: /heart/ }) — o 1º coração da lista
+# ~ getAllByRole('button', { name: /heart/ }).first()
 - tapOn:
-    id: "movie-card-heart-.*"
+    id: ${output.role.botaoCoracao}
     index: 0
 
-# ~ .nth(2) — o 3º coração
+# ~ .nth(2)
 - tapOn:
-    id: "movie-card-heart-.*"
+    id: ${output.role.botaoCoracao}
     index: 2
 
-# ~ getByRole('button', { name: 'Favoritos' }) — por texto visível, regex case-insensitive
-- tapOn: "(?i)favoritos"
+# ~ getByRole('button', { name: 'Favoritos' })
+- tapOn:
+    id: ${output.role.botaoFavoritos}
 
-# ~ expect(getAllByRole('listitem')).toHaveCount(2) — conta via regex + assert do contador da tela
+# ~ expect(getAllByRole('listitem')).toHaveCount(2)
 - assertVisible: "2 favoritos"
 - assertVisible:
-    id: "favorites-item-.*"
+    id: ${output.role.itemFavorito}
