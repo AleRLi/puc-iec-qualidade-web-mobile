@@ -55,6 +55,7 @@ maestro test flows/01-smoke.yaml     # modelo resolvido — emulador ligado, dev
 1. Fork + clone novo; branch própria; trabalhe em `exercicios/05-lab-arquitetura-testes/pratica/`.
 2. Abra o PR — o bot (J.A.R.V.I.S.) comenta a **nota mínima automática** a cada push.
 3. `RESPOSTAS.md` e a evidência no Android entram na nota final no Canvas.
+4. **Fez em dupla** (por exemplo, só um de vocês tem emulador)? Escreva os **dois nomes no README** do PR e **cada um envia o link do PR no Canvas**.
 
 ## Dicas
 

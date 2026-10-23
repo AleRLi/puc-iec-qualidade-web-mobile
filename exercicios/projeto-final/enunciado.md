@@ -2,72 +2,93 @@
 
 **Disciplina:** Qualidade em Aplicações Web e Mobile
 **Modalidade:** grupo de 3 a 4 alunos
-**Apresentação:** ver Canvas (demo ao vivo + Q&A)
-**Entrega (repositório + relatório):** ver Canvas
+**Apresentação:** ver Canvas (~20 min, com perguntas no final)
+**Entrega (slides + relatório):** ver Canvas
 
 ---
 
 ## O que é
 
-Seminário técnico: cada grupo escolhe **um tema de testes atual**, constrói um **artefato pequeno e demonstrável**, e **apresenta** o que descobriu. Não é uma suíte gigante: é um recorte bem feito, com evidência.
+Seminário técnico: cada grupo escolhe **um tema de testes atual**, estuda **boas fontes** e **apresenta** o que descobriu. Não é um artigo científico, mas a qualidade das fontes limita a qualidade do trabalho.
 
 **Regras de ouro**
 
-- **Custo zero:** nada de serviço pago ou cartão de crédito. Navegador ou emulador bastam.
-- **IA é permitida — declarando:** o README diz qual ferramenta usou e como. Cópia sem entendimento = zero.
-- **Reprodutível:** outra pessoa roda o seu README e chega ao mesmo resultado.
+- **Escopo pequeno.** É uma semana de trabalho: recorte o tema até caber.
+- **Fontes confiáveis.** Veja a seção *Fontes* abaixo.
+- **IA é permitida, declarando:** o relatório diz qual ferramenta usou e como. Cópia sem entendimento = zero.
+- **Custo zero:** nada de serviço pago ou cartão de crédito.
 
 ## Escolha do tema
 
-Escolham pela habilidade que o grupo quer mostrar. O app de referência é o **CineFav** (web, PWA ou mobile).
+O tema é **livre**, web ou mobile. **Comece por um problema**, não por uma ferramenta, e daí chegue aos artigos e casos reais.
 
-| Trilha | Exemplos de tema (2026) | Precisa de emulador? |
-|---|---|---|
-| 🤖 Agentes de IA | **Playwright Agents** (planner / generator / healer) · **Maestro MCP** com agente de código (Maestro Viewer) · crítica da geração de testes por LLM (*oracle problem*, taxa de acerto) | depende |
-| 🔭 Shift-right | observabilidade como superfície de teste · feature flags e canary · falha em produção virando teste de regressão | não |
-| 🧠 Testar app com LLM | *evals* e red-teaming de um recurso com LLM (GitHub Models, grátis) | não |
-| 🌐 Web / PWA | Playwright visual regression · Lighthouse CI com budget · Service Worker/offline | não |
-| 📱 Mobile | Maestro avançado + POM · visual testing · medir e reduzir flakiness | sim |
-| 🏗️ Pipeline | CI/CD com sharding e quality gate · mutation testing (Stryker) | não |
-| ♿ Acessibilidade / ⚡ Perf / 🔒 Segurança | auditoria WCAG 2.2 com axe-core · Flashlight/Reassure · OWASP MASVS | depende |
+> Exemplo de problema: "como grandes empresas resolvem *flakiness*?" · "como times estão usando LLM para gerar testes?"
 
-Tema próprio é bem-vindo: combine com o professor **antes** de começar.
+| Trilha | Exemplos de tema (2026) |
+|---|---|
+| 🤖 Agentes de IA | Playwright Agents (planner / generator / healer) · Maestro MCP com agente de código · crítica da geração de testes por LLM (*oracle problem*, taxa de acerto) · agentes autônomos de qualidade |
+| 🔭 Shift-right | observabilidade como superfície de teste · feature flags e *canary release* · falha em produção virando teste de regressão |
+| 🧠 Testar app com LLM | *evals* (avaliações) e red-teaming de aplicações conversacionais ou APIs com LLM |
+| 🌐 Web / PWA | regressão visual · Lighthouse CI com budget · Service Worker e offline |
+| 📱 Mobile | Maestro avançado e Page Object · testes visuais · medir e reduzir *flakiness* |
+| 🏗️ Pipeline | CI/CD com sharding e quality gate · *mutation testing* (Stryker) |
+| ♿ Acessibilidade / ⚡ Perf / 🔒 Segurança | auditoria WCAG 2.2 · Flashlight/Reassure · OWASP MASVS |
 
-**Pergunta-guia:** que *risco real* do CineFav o nosso projeto cobre?
+Tema próprio é bem-vindo. Se tiver dúvida de escopo, fale com o professor **antes** de começar.
 
-**Tamanho certo:** ✅ 8 flows Maestro com `tags` + relatório JUnit + CI · ✅ regressão visual do CineFav Web em 3 viewports · ✅ axe-core com lista de violações e 3 correções (antes × depois). ❌ "testar tudo" em web + PWA + iOS + Android + IA.
+**Escopo bom × ruim**
+
+- ✅ "Como gerar testes de usabilidade com LLMs no Playwright para dispositivos Android"
+- ❌ "LLMs em testes" (amplo demais para uma semana)
+
+## Fontes
+
+| ✅ Boa fonte | ❌ Fonte fraca |
+|---|---|
+| blog de engenharia de empresa com o caso real (Netflix Tech Blog, Anthropic, Google, Airbnb…) | wiki aberta sem autoria verificável |
+| autor de referência (ex.: Martin Fowler) | post sem autor, sem data ou sem link |
+| paper (IEEE, ACM, USENIX) com autor, venue e ano | resumo de IA sem a fonte original |
+| documentação oficial da ferramenta | |
+
+Cite cada fonte com **autor, título, link e data de acesso**. Artigo científico é bem-vindo, mas não é obrigatório.
 
 ## O que entregar
 
-| # | Entregável | O que é |
-|---|---|---|
-| 1 | **Artefato técnico** | repositório (ou pasta no fork) com o que o grupo construiu/rodou; README com **comandos exatos** |
-| 2 | **Apresentação** | ~10 min: problema → ferramenta → **demo** → achado → limite, + 5 min de Q&A. **Todos** do grupo falam |
-| 3 | **Relatório** | 2 páginas: o que fez, evidências (prints/saída), o que **não** funcionou, conclusão |
+| # | Entregável | O que é | Obrigatório? |
+|---|---|---|---|
+| 1 | **Apresentação** | ~20 min: problema → fontes e solução → achados e trade-offs → limites. Perguntas no final. **O grupo decide** quem fala | ✅ |
+| 2 | **Relatório** | 2 páginas, com o modelo abaixo (ou o seu, com o mínimo pedido) | ✅ |
+| 3 | **Artefato técnico** | link de repositório, demo ou experimento que o grupo fez | ⭐ **bônus** |
 
-**Como entregar:** 1 fork por grupo; um integrante abre o PR (ou envia o link do repositório no Canvas) com o nome dos integrantes no README. O histórico de commits mostra a contribuição de cada um.
+- **Demo é opcional.** Se der tempo, melhor; se não der, tudo bem.
+- **Modelos:** [`template-apresentacao.md`](https://github.com/jacksonsmith/puc-iec-qualidade-web-mobile/blob/main/exercicios/projeto-final/template-apresentacao.md) · [`template-relatorio.md`](https://github.com/jacksonsmith/puc-iec-qualidade-web-mobile/blob/main/exercicios/projeto-final/template-relatorio.md). Usar o modelo é opcional; o **mínimo** do relatório é: contexto, problema, por que ele importa, quem é afetado e as fontes.
+- **Prioridade:** se faltar tempo, priorize a **apresentação**; o relatório sai depois.
+
+**Como entregar (Canvas):** **uma** pessoa do grupo entrega os slides e o relatório, **com o nome de todos os integrantes**. Se duas pessoas entregarem, não tem problema: o professor reconhece que são do mesmo grupo.
+
+**Ordem de apresentação:** sorteio no início da última aula.
 
 ## Critérios de avaliação (50 pts)
 
 | Critério | Pontos |
 |---|---|
-| Artefato técnico funcional e reproduzível | 18 |
-| Apresentação (clareza + demo ao vivo) | 10 |
-| Relatório (evidência, honestidade sobre os limites) | 10 |
-| Domínio conceitual no Q&A | 7 |
+| Apresentação (clareza, domínio do tema, uso das fontes) | 20 |
+| Relatório (contexto, problema, evidência, limites, fontes) | 18 |
+| Domínio conceitual nas perguntas | 7 |
 | Originalidade e profundidade | 5 |
+| ⭐ Artefato técnico (bônus) | recupera pontos perdidos nos critérios acima; o PF **não passa de 50** |
 
-- **Contribuição individual:** quem não contribuiu (histórico de commits e Q&A) tem nota diferente dentro do grupo.
-- **Demo que falha ao vivo não zera:** tenha plano B (gravação ou print) e explique o que deu errado.
-- **Originalidade:** fork direto sem alteração substantiva não vale.
+- **Todos trabalham:** o grupo se organiza para que cada pessoa contribua. Quanto melhor o trabalho, mais pontos para todos.
+- **Contribuição individual:** quem não contribuiu (relatório, perguntas) pode ter nota diferente dentro do grupo.
+- **Originalidade:** resumo copiado de uma única fonte não vale.
 
-## Roteiro da apresentação
+## Roteiro sugerido da apresentação (~20 min)
 
-1. **Problema** — que risco/bug o grupo quis pegar (1 min)
-2. **Ferramenta** — por que esta e não outra (1 min)
-3. **Demo ao vivo** — passando **e** falhando (4 min)
-4. **Achado** — número, print ou comparação (3 min)
-5. **Limite** — o que **não** funcionou ou não cobre (1 min)
+1. **Problema** — que risco ou dor de qualidade o grupo estudou (3 min)
+2. **Fontes e solução** — o que boas fontes dizem, por que esta abordagem e não outra (6 min)
+3. **Achados e trade-offs** — o que funciona, o que custa, o que não funcionou (6 min)
+4. **Limites e próximos passos** (2 min)
+5. **Perguntas** (3 min)
 
 ## Leituras de apoio
 
